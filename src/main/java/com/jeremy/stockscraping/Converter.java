@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Converter {
 
     private ScrapeCurrencyCourt  c = new ScrapeCurrencyCourt();
+    private FinalChoice choice = new FinalChoice(this);
 
     public void ConvertEuroToDollar() {
         Scanner sc = new Scanner(System.in);
@@ -20,6 +21,7 @@ public class Converter {
         } catch (ParseException e) {
             e.printStackTrace();
         }
+        choice.FinalChoiceEuro();
     }
 
     public void ConvertDollarToEuro() {
@@ -34,5 +36,6 @@ public class Converter {
         } catch (ParseException e) {
             e.printStackTrace();
         }
+        choice.FinalChoiceDollar();
     }
 }

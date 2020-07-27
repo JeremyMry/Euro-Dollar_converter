@@ -1,10 +1,8 @@
 package com.jeremy.stockscraping;
 
-import java.text.DecimalFormat;
-import java.text.ParseException;
 import java.util.Scanner;
 
-public class Choices {
+public class CurrencyChoice {
 
     Converter converter = new Converter();
 
